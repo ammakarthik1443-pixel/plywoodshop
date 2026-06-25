@@ -1,0 +1,118 @@
+/* Premium Layout Container */
+.product-catalog-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.catalog-header h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #222;
+  letter-spacing: 1px;
+}
+
+/* Premium Filter Buttons */
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 50px;
+}
+
+.filter-btn {
+  padding: 10px 25px;
+  border: 1px solid #c49a6c; /* Elegant Gold/Tan color */
+  background: transparent;
+  color: #333;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover, .filter-btn.active {
+  background: #c49a6c;
+  color: #fff;
+}
+
+/* Premium Product Grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #eee;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+/* Fix for Massive Images */
+.product-card img {
+  width: 100%;
+  height: 250px; /* Ithu thaan magic! Ellam images-um intha size-ku vanthudum */
+  object-fit: cover; /* Image stretch aagama correct-a crop aagum */
+}
+
+.card-content {
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-content h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #222;
+  font-weight: 600;
+}
+
+.price {
+  font-size: 1.2rem;
+  color: #c49a6c;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.view-btn {
+  margin-top: auto; 
+  padding: 12px;
+  background: #222; /* Dark professional button */
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.view-btn:hover {
+  background: #c49a6c;
+}
+
+.no-products {
+  text-align: center;
+  grid-column: 1 / -1;
+  font-size: 1.2rem;
+  color: #666;
+  padding: 50px 0;
+}

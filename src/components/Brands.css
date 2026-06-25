@@ -1,0 +1,56 @@
+.brands-carousel-section-wrapper {
+  background: var(--dark);
+  padding: 60px 0;
+  border-top: 1px solid rgba(255,255,255,0.05);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.brands-container-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 5%;
+  text-align: center;
+}
+
+.brands-narrative-tag {
+  color: var(--secondary);
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 3px;
+  font-weight: 700;
+  margin-bottom: 35px;
+}
+
+.brand-logo-pod {
+  background: rgba(255,255,255,0.02);
+  padding: 20px;
+  border: 1px solid rgba(255,255,255,0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  transition: var(--transition);
+}
+
+.brand-logo-pod img {
+  height: 40px;
+  object-fit: contain;
+  filter: grayscale(100%) brightness(200%);
+  transition: var(--transition);
+}
+
+.brand-logo-pod:hover {
+  background: rgba(255,255,255,0.05);
+  border-color: var(--secondary);
+}
+
+.brand-logo-pod:hover img {
+  filter: grayscale(0%) brightness(100%);
+}
+
+.brand-label-under {
+  color: #888;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}

@@ -1,0 +1,136 @@
+.contact-hub-wrapper {
+  background: var(--light);
+}
+
+.contact-split-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 80px;
+  max-width: 1400px;
+  margin: 0 auto 60px auto;
+}
+
+@media (max-width: 1024px) {
+  .contact-split-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+}
+
+.contact-intel-column {
+  text-align: left;
+}
+
+.contact-narrative-p {
+  color: var(--gray);
+  margin-bottom: 35px;
+  font-size: 0.95rem;
+}
+
+.intel-channels-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.intel-channel-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.intel-icon {
+  font-size: 1.5rem;
+  color: var(--primary);
+}
+
+.intel-channel-item h4 {
+  font-size: 1rem;
+  color: var(--dark);
+}
+
+.intel-channel-item p {
+  color: var(--gray);
+  font-size: 0.9rem;
+}
+
+.whatsapp-floating-trigger-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #25D366;
+  color: var(--white);
+  padding: 15px 30px;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+.premium-specification-form {
+  background: var(--white);
+  padding: 40px;
+  box-shadow: var(--shadow);
+  border-radius: 4px;
+}
+
+.form-double-row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+  .form-double-row {
+    flex-direction: column;
+  }
+}
+
+.input-group-unit {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.input-group-unit label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--dark);
+  letter-spacing: 1px;
+}
+
+.input-group-unit input, .input-group-unit select, .input-group-unit textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #E0E0E0;
+  background: var(--light);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  outline: none;
+}
+
+.input-group-unit input:focus, .input-group-unit select:focus, .input-group-unit textarea:focus {
+  border-color: var(--primary);
+}
+
+.embedded-map-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+@media(max-width:768px){
+
+  .categories-grid-system{
+    grid-template-columns:1fr !important;
+    gap:20px;
+  }
+
+  .category-image-wrap{
+    height:180px !important;
+  }
+}

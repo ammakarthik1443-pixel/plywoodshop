@@ -1,0 +1,148 @@
+:root {
+  --primary: #8B5E3C;
+  --secondary: #C8A165;
+  --dark: #1A1A1A;
+  --white: #FFFFFF;
+  --light: #F8F8F8;
+  --gray: #777777;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  --transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+  --font: 'Playfair Display', 'Montserrat', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--white);
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, .premium-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+}
+
+a {
+  text-shadow: none;
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.section-padding {
+  padding: 80px 10%;
+}
+
+@media (max-width: 1024px) {
+  .section-padding {
+    padding: 60px 5%;
+  }
+}
+@media (max-width: 768px) {
+  .section-padding {
+    padding: 40px 20px;
+  }
+}
+
+.btn-premium {
+  display: inline-block;
+  padding: 14px 32px;
+  background: var(--primary);
+  color: var(--white);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  border: 1px solid var(--primary);
+  cursor: pointer;
+  transition: var(--transition);
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.btn-premium::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: var(--secondary);
+  transition: var(--transition);
+  z-index: -1;
+}
+
+.btn-premium:hover::before {
+  left: 0;
+}
+
+.btn-premium-outline {
+  display: inline-block;
+  padding: 14px 32px;
+  background: transparent;
+  color: var(--dark);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  border: 1px solid var(--dark);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-premium-outline:hover {
+  background: var(--dark);
+  color: var(--white);
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-header span {
+  color: var(--secondary);
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 3px;
+  font-size: 0.85rem;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.section-header h2 {
+  /* Font size clamp panni responsive aakirukken */
+  font-size: clamp(1.8rem, 5vw, 2.5rem); 
+  color: var(--dark);
+  position: relative;
+  padding-bottom: 15px;
+  line-height: 1.3;
+}
+
+.section-header h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 2px;
+  background: var(--secondary);
+}
